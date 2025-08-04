@@ -744,5 +744,24 @@
 
     <script src="assets//js/js.js"></script>
     <script src="assets/js/theme-toggle.js"></script>
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+        });
+      </script>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+  
+    document.onkeydown = function(e) {
+      if (
+        e.keyCode == 123 || // F12
+        (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
+        (e.ctrlKey && e.keyCode == 85) // Ctrl+U
+      ) {
+        return false;
+      }
+    };
+  </script>
 </body>
 </html>
