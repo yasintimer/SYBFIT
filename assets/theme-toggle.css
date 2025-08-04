@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.07);
+  }
+  
+  body.light-mode {
+    background-color: #f6f8fa;
+    color: #191919;
+  }
+  
+  body.dark-mode {
+    background-color: #23272f;
+    color: #f2f2f2;
+  }
+  
+  body.dark-mode .container {
+    background: #343947;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.14);
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  body.light-mode button {
+    background: #1976d2;
+  }
+  body.dark-mode button {
+    background: #333;
+  }
+  

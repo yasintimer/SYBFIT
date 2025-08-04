@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قالب بدنسازی یاسین</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    
+</head>
+<body class="font-sans bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center">
+                        <i class="fas fa-dumbbell text-3xl text-blue-500 mr-2"></i>
+                        <span class="text-2xl font-bold text-blue-600">Yasin<span class="text-blue-400">Fit</span></span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index1.html" class="nav-link text-gray-800 hover:text-blue-500 px-3 py-2 text-lg font-medium">صفحه اصلی</a>
+                    <a href="index1.html" class="nav-link text-gray-800 hover:text-blue-500 px-3 py-2 text-lg font-medium">درباره ما</a>
+                    <a href="index1.html" class="nav-link text-gray-800 hover:text-blue-500 px-3 py-2 text-lg font-medium">خدمات ما</a>
+                    <a href="Blog.html" class="nav-link text-gray-800 hover:text-blue-500 px-3 py-2 text-lg font-medium">وبلاگ ها</a>
+                    <a href="#services" class="nav-link text-gray-800 hover:text-blue-500 px-3 py-2 text-lg font-medium">ارتباط با ما</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-800 hover:text-blue-500 focus:outline-none">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index1.html" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-500 hover:bg-blue-50">صفحه اصلی</a>
+                <a href="index1.html" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-500 hover:bg-blue-50">درباره ما</a>
+                <a href="index1.html" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-500 hover:bg-blue-50">خدمات ما</a>
+                <a href="Blog.html" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-500 hover:bg-blue-50">وبلاگ ها</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-800 hover:text-blue-500 hover:bg-blue-50">ارتباط با ما</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-20 pb-8 flex-grow"> <!-- اضافه کردن pt-20 برای فاصله از نویگیشن و flex-grow -->
+        <!-- Blog Section -->
+        <section id="blog" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Blog Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">علم بازیابی: <span class="text-blue-500">تکنیک‌هایی برای افزایش عملکرد</span></h2>
+                    <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto">ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+                    <div class="flex justify-center items-center mt-6 space-x-4 text-gray-500">
+                        <span><i class="far fa-calendar-alt mr-2"></i> 1402/05/15</span>
+                        <span><i class="far fa-eye mr-2"></i> 254 بازدید</span>
+                    </div>
+                </div>
+
+                <!-- Blog Content -->
+                <div class="prose max-w-none mb-16">
+                    <img src="assets/images/MRMR9.jpg" alt="ورزش و بازیابی" class="rounded-lg w-full h-96 object-cover mb-8">
+                    
+                    <h3 class="text-2xl font-bold text-gray-800">مقدمه</h3>
+                    <p class="text-gray-600 dark:text-gray-3">بازیابی بعد از تمرین یکی از مهم‌ترین بخش‌های هر برنامه ورزشی است. تحقیقات نشان داده‌اند که بازیابی مناسب می‌تواند عملکرد ورزشی را تا 30% افزایش دهد.</p>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8">تکنیک‌های بازیابی</h3>
+                    <ul class="list-disc pl-6 text-gray-600 dark:text-gray-3">
+                        <li class="mb-2">خواب کافی (7-9 ساعت در شب)</li>
+                        <li class="mb-2">تغذیه مناسب بعد از تمرین</li>
+                        <li class="mb-2">ماساژ و رولینگ</li>
+                        <li class="mb-2">حمام آب سرد</li>
+                        <li class="mb-2">تمرینات کششی</li>
+                    </ul>
+                    
+                    <h3 class="text-2xl font-bold text-gray-800 mt-8">نتیجه‌گیری</h3>
+                    <p class="text-gray-600 dark:text-gray-3">با رعایت اصول بازیابی، می‌توانید از آسیب‌های ورزشی جلوگیری کرده و عملکرد خود را در جلسات بعدی تمرین به میزان قابل توجهی بهبود بخشید.</p>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="mt-16">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-8">نظرات کاربران</h3>
+                    
+                    <!-- Comment Form -->
+                    <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                        <h4 class="text-lg font-medium text-gray-800 mb-4">دیدگاه خود را بنویسید</h4>
+                        <form>
+                            <div class="mb-4" id="services">
+                                <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="نظر شما..."></textarea>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                                <input type="text" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="نام">
+                                <input type="email" class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="ایمیل">
+                            </div>
+                            <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-200">ارسال نظر</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Comments List -->
+                    <div class="space-y-6">
+                        <!-- Comment 1 -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">م</div>
+                                <div class="mr-3">
+                                    <h5 class="font-medium text-gray-800">محمد رضایی</h5>
+                                    <span class="text-sm text-gray-500">1402/05/12</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">مقاله بسیار مفیدی بود. من از تکنیک حمام آب سرد استفاده کردم و واقعا تأثیرش رو احساس کردم.</p>
+                        </div>
+                        
+                        <!-- Comment 2 -->
+                        <div class="bg-gray-50 p-6 rounded-lg">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold">ع</div>
+                                <div class="mr-3">
+                                    <h5 class="font-medium text-gray-800">علی محمدی</h5>
+                                    <span class="text-sm text-gray-500">1402/05/10</span>
+                                </div>
+                            </div>
+                            <p class="text-gray-600">ممنون از مقاله خوبتون. لطفا در مورد تغذیه بعد از تمرین بیشتر توضیح بدید.</p>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+
+            <!-- بخش مپ -->
+            <div class="h-96 w-full bg-gray-200">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215256018043!2d-73.9878449241641!3d40.74844097138961!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1689876443585!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 w-full">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <i class="fas fa-dumbbell text-3xl text-blue-400 mr-2"></i>
+                        <span class="text-2xl font-bold text-blue-400">Yasin<span class="text-blue-300">Fit</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-6">راهکارهای تناسب اندام ممتاز برای کمک به شما در دستیابی به اهداف سلامتی و تندرستی از طریق برنامه‌های تمرینی شخصی‌سازی‌شده.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">پیوند های سریع</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-400 hover:text-blue-400">خانه</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-blue-400">درباره ما</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-blue-400">خدمات ما</a></li>
+                        <li><a href="Blog.html" class="text-gray-400 hover:text-blue-400">وبلاگ ها</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-blue-400">ارتباط با ما</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">خدمات</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400">آموزش خصوصی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400">کلاس های گروهی</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400">برنامه ریزی تغذیه</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400">کاهش وزن</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-blue-400">تمرین قدرتی</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-6">خبرنامه</h3>
+                    <p class="text-gray-400 mb-4">برای دریافت نکات تناسب اندام و پیشنهادات ویژه در خبرنامه ما عضو شوید.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="ایمیل شما" class="px-4 py-3 w-full rounded-l-lg focus:outline-none text-gray-900">
+                        <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-4 py-3 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">یاسین فیت.تمامی حقوق محفوظ است © 1404</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400">سیاست حفظ حریم خصوصی</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400">شرایط خدمات</a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400">نقشه سایت</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- دکمه بازگشت به بالا -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <button id="theme-toggle" class="fixed bottom-8 left-8 w-12 h-12 bg-gray-200 dark:bg-gray-700 text-black dark:text-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-300 dark:hover:bg-gray-600 transition duration-300 z-50">
+        <i class="fas fa-moon dark:hidden"></i>
+        <i class="fas fa-sun hidden dark:block"></i>
+      </button>
+
+    <script src="assets//js/js.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+</body>
+</html>
