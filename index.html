@@ -1,0 +1,142 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازش کن!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+        
+        .birthday-text {
+            font-family: 'Dancing Script', cursive;
+        }
+        
+        .hidden-content {
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 1s ease;
+        }
+        
+        .show-content {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .golden-btn {
+            background: linear-gradient(135deg, #FFD700 0%, #D4AF37 50%, #FFD700 100%);
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.6);
+            transition: all 0.3s ease;
+        }
+        
+        .golden-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 215, 0, 0.8);
+        }
+        
+        .golden-btn:active {
+            transform: translateY(1px);
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f00;
+            opacity: 0;
+        }
+        
+        .birthday-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,248,220,0.9) 100%);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-radius: 15px;
+        }
+        
+        .audio-control {
+            opacity: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-purple-100 min-h-screen flex flex-col items-center justify-center p-4 overflow-hidden">
+    <div id="initial-view" class="text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-purple-800 mb-8">کلیک کن روی دکمه!</h1>
+        <p class="text-xl text-gray-700 mb-12">سوپرایز کلیک کن!</p>
+        
+        <button id="surprise-btn" class="golden-btn text-2xl px-8 py-4 rounded-full font-bold text-white uppercase tracking-wider">
+            <i class="fas fa-gift mr-2"></i> Open Your Gift
+        </button>
+    </div>
+    
+    <div id="surprise-content" class="hidden-content birthday-card p-8 max-w-2xl mx-auto text-center">
+        <h2 class="birthday-text text-5xl md:text-6xl text-pink-600 mb-6">تولدت مبارک دوست قشنگم !</h2>
+        <p class="text-xl text-gray-700 mb-8">امروز روزیه که دنیا بدون تو یه جورایی ناقص بود... خدا رو شکر که هستی و روشناییِ زندگیم هستی! همیشه کنارم باش، چون من بدون شوخی‌ها و خنده‌هات گم میشم! 🥰
+            عشق من، سالم و شاد باشی، هرچی آرزو داری بهت برسه! 💫"</p>
+        
+        <div class="mb-8">
+            <img src="ym.jpg" 
+                 alt="Birthday Celebration" 
+                 class="rounded-lg shadow-lg mx-auto w-full max-h-96 object-cover">
+        </div>
+        
+        <p class="birthday-text text-3xl text-purple-700 mb-2">انشالله به تمام ارزوهاتو بررسی❤😘</p>
+        <p class="text-lg text-gray-600">امیدوارم خوشحالت کرده باشه</p>
+        
+        <audio id="birthday-audio" class="audio-control" loop>
+            <source src="رفیق.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const surpriseBtn = document.getElementById('surprise-btn');
+            const initialView = document.getElementById('initial-view');
+            const surpriseContent = document.getElementById('surprise-content');
+            const birthdayAudio = document.getElementById('birthday-audio');
+            
+            surpriseBtn.addEventListener('click', function() {
+                // Hide initial view
+                initialView.style.display = 'none';
+                
+                // Show surprise content with animation
+                surpriseContent.classList.add('show-content');
+                
+                // Play birthday music
+                birthdayAudio.play().catch(e => console.log("Auto-play prevented:", e));
+                
+                // Create confetti effect
+                createConfetti();
+            });
+            
+            function createConfetti() {
+                const colors = ['#FF5252', '#FFD740', '#64FFDA', '#448AFF', '#B388FF'];
+                
+                for (let i = 0; i < 100; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                    confetti.style.left = Math.random() * 100 + 'vw';
+                    confetti.style.top = -10 + 'px';
+                    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+                    
+                    document.body.appendChild(confetti);
+                    
+                    // Animate confetti
+                    const animation = confetti.animate([
+                        { top: '-10px', opacity: 0 },
+                        { top: '10%', opacity: 1 },
+                        { top: '100vh', opacity: 0 }
+                    ], {
+                        duration: 3000 + Math.random() * 3000,
+                        delay: Math.random() * 2000
+                    });
+                    
+                    animation.onfinish = () => confetti.remove();
+                }
+            }
+        });
+    </script>
+</body>
+</html>
